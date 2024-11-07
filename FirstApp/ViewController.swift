@@ -16,6 +16,10 @@ class ViewController: UIViewController {
 
     // Needs to implement user and password validation rules
     func validate(user: String) -> Bool {
+        if user.isEmpty {
+            return false
+        }
+        
         return true
     }
 
