@@ -8,11 +8,24 @@
 import UIKit
 
 class OTPAuthenticationViewController: UIViewController {
+    
+    @IBOutlet weak var otpTextField: UITextField!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func verifyOTPButtonTapped(_ sender: UIButton) {
+        guard let enteredOTP = otpTextField.text else { return }
+        
+        if enteredOTP == "1234567" {
+            print("Your OTP is verified")
+        } else {
+            print("Invalid OTP")
+        }
     }
     
 
