@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zhy-bN-a4t">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qdc-NS-wuT">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -44,7 +44,7 @@
                                     <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="R5Y-kT-Qa9" kind="push" id="U2z-Nn-DeY"/>
+                                    <segue destination="Zhy-bN-a4t" kind="show" id="YGV-9X-AZw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xox-Yj-PxX">
@@ -116,11 +116,11 @@
             <objects>
                 <viewController id="R5Y-kT-Qa9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c4L-St-AdZ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is next viewcontroller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyY-mJ-c32">
-                                <rect key="frame" x="98" y="364" width="197" height="21"/>
+                                <rect key="frame" x="98" y="415.66666666666669" width="197" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -144,11 +144,11 @@
             <objects>
                 <viewController id="Zhy-bN-a4t" customClass="OTPAuthenticationViewController" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RSW-kX-gl6">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP Authentication" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2j-bH-OEK">
-                                <rect key="frame" x="46.666666666666657" y="145" width="300" height="50"/>
+                                <rect key="frame" x="46.666666666666657" y="93.666666666666657" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="KjU-L8-YIZ"/>
                                     <constraint firstAttribute="height" constant="50" id="Lg4-Xb-t6z"/>
@@ -158,7 +158,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter OTP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GeM-8B-0gc">
-                                <rect key="frame" x="46.666666666666657" y="351" width="300" height="50"/>
+                                <rect key="frame" x="46.666666666666657" y="299.66666666666669" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Wnd-Bj-cIM"/>
                                     <constraint firstAttribute="height" constant="50" id="rdJ-fV-loH"/>
@@ -167,7 +167,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1X-3W-oDO">
-                                <rect key="frame" x="46.666666666666657" y="426" width="300" height="50"/>
+                                <rect key="frame" x="46.666666666666657" y="374.66666666666669" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9F8-NV-GZG"/>
                                     <constraint firstAttribute="width" constant="300" id="Ltz-XX-WKU"/>
@@ -187,6 +187,7 @@
                             <constraint firstItem="o2j-bH-OEK" firstAttribute="centerY" secondItem="RSW-kX-gl6" secondAttribute="centerY" constant="-256" id="zzX-tS-65B"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FBC-XS-CHG"/>
                     <connections>
                         <outlet property="otpTextField" destination="GeM-8B-0gc" id="Q8E-Ax-Wy7"/>
                     </connections>
