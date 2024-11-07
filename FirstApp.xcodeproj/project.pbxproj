@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXFileReference section */
@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C01104882CDABF0400ECE732 /* Exceptions for "FirstApp" folder in "FirstApp" target */ = {
+		C01104882CDABF0400ECE732 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,14 +21,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C01104782CDABF0000ECE732 /* FirstApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				C01104882CDABF0400ECE732 /* Exceptions for "FirstApp" folder in "FirstApp" target */,
-			);
-			path = FirstApp;
-			sourceTree = "<group>";
-		};
+		C01104782CDABF0000ECE732 /* FirstApp */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (C01104882CDABF0400ECE732 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = FirstApp; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +92,7 @@
 				};
 			};
 			buildConfigurationList = C01104712CDABF0000ECE732 /* Build configuration list for PBXProject "FirstApp" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -107,7 +101,6 @@
 			);
 			mainGroup = C011046D2CDABF0000ECE732;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = C01104772CDABF0000ECE732 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
