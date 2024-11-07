@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    // Needs to implement user and password validation rules
+    func validate(user: String) -> Bool {
+        return true
+    }
 
 }
 
