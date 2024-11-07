@@ -1,6 +1,6 @@
-## FirstApp 
+## ConnectApp 
 
-# iOS App Signup Functionality
+# iOS App Signup Functionality (Version: 1.0)
 
 ## Overview
 This feature implements the signup functionality for new users in the iOS app. The signup feature allows users to create an account and access personalized features within the app.
@@ -10,8 +10,8 @@ This feature implements the signup functionality for new users in the iOS app. T
 ### Ticket Details
 
 **Ticket ID:** `IOS-101`  
-**Tag:** User Story  
-**Assigned To:** John  
+**Tag:** Maintenance  
+**Assigned To:** Ikdoo Kim  
 **Priority:** High  
 **Sprint:** Sprint 5 - User Authentication & Profile Setup  
 
@@ -19,7 +19,7 @@ This feature implements the signup functionality for new users in the iOS app. T
 
 ### Feature Description
 
-**User Story:**  
+**Maintenance:**  
 As an iOS user, I want to be able to create an account in the app so that I can access personalized features.
 
 ---
@@ -34,15 +34,15 @@ As an iOS user, I want to be able to create an account in the app so that I can 
      - Password
      - Confirm Password
 
-2. **Client-Side Validations**
+2. **Client-Side Validations**  
    - Ensure all fields are filled before enabling the signup button.
    - Password and confirm password fields should match.
    - Provide error messages for invalid input (e.g., invalid email format).
 
-3. **API Integration**
+3. **API Integration**  
    - Connect the signup screen with the backend API to register new users.
 
-4. **User Experience**
+4. **User Experience**  
    - Show loading indicators during the signup process.
    - Display error messages if signup fails.
    - On successful signup, navigate the user to the home screen.
@@ -77,5 +77,3 @@ The UI design screens for the signup page are attached in this repository under 
 - Test all validation cases to ensure robustness of the feature.
 
 ---
-
-
