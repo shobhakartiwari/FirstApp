@@ -77,4 +77,3 @@ The UI design screens for the signup page are attached in this repository under 
 - Test all validation cases to ensure robustness of the feature.
 
 ---
-
