@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qdc-NS-wuT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qdc-NS-wuT">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -71,6 +71,12 @@
                                     <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to ConnectApp " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1c-hy-fOZ">
+                                <rect key="frame" x="93.666666666666686" y="123" width="206" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="tableBackgroundColor"/>
@@ -78,12 +84,16 @@
                             <constraint firstItem="tK0-kv-uqV" firstAttribute="top" secondItem="40Y-oS-DQm" secondAttribute="bottom" constant="69" id="5QG-BN-bpk"/>
                             <constraint firstItem="40Y-oS-DQm" firstAttribute="top" secondItem="sIb-C4-cda" secondAttribute="bottom" constant="34" id="AGy-t4-zbi"/>
                             <constraint firstItem="tK0-kv-uqV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Cia-Ts-nvl"/>
+                            <constraint firstItem="g1c-hy-fOZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="Gru-xe-GSe"/>
                             <constraint firstItem="sIb-C4-cda" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ljb-bI-w35"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sIb-C4-cda" secondAttribute="trailing" constant="16" id="cNE-bw-jeZ"/>
                             <constraint firstItem="40Y-oS-DQm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cU6-WF-kiw"/>
                             <constraint firstItem="sIb-C4-cda" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="224" id="cw6-nq-PZq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g1c-hy-fOZ" secondAttribute="trailing" constant="93.329999999999998" id="gXz-dj-dqy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tK0-kv-uqV" secondAttribute="trailing" constant="16" id="hBF-g6-QBS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="40Y-oS-DQm" secondAttribute="trailing" constant="16" id="hiU-l0-iYP"/>
+                            <constraint firstItem="g1c-hy-fOZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hqV-Ta-awc"/>
+                            <constraint firstItem="g1c-hy-fOZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93.670000000000002" id="yjV-JF-iPF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LbT-ZC-9Md"/>
