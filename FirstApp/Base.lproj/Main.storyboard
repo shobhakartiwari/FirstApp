@@ -44,7 +44,7 @@
                                     <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="R5Y-kT-Qa9" kind="push" id="U2z-Nn-DeY"/>
+                                    <segue destination="Zhy-bN-a4t" kind="show" id="YGV-9X-AZw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xox-Yj-PxX">
@@ -214,11 +214,11 @@
             <objects>
                 <viewController id="R5Y-kT-Qa9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c4L-St-AdZ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is next viewcontroller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyY-mJ-c32">
-                                <rect key="frame" x="98" y="364" width="197" height="21"/>
+                                <rect key="frame" x="98" y="415.66666666666669" width="197" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -236,6 +236,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ody-gY-jUa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1903" y="4"/>
+        </scene>
+        <!--Authentication View Controller-->
+        <scene sceneID="vV8-hd-Mjn">
+            <objects>
+                <viewController id="Zhy-bN-a4t" customClass="OTPAuthenticationViewController" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RSW-kX-gl6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP Authentication" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2j-bH-OEK">
+                                <rect key="frame" x="46.666666666666657" y="93.666666666666657" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="KjU-L8-YIZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="Lg4-Xb-t6z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter OTP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GeM-8B-0gc">
+                                <rect key="frame" x="46.666666666666657" y="299.66666666666669" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Wnd-Bj-cIM"/>
+                                    <constraint firstAttribute="height" constant="50" id="rdJ-fV-loH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1X-3W-oDO">
+                                <rect key="frame" x="46.666666666666657" y="374.66666666666669" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9F8-NV-GZG"/>
+                                    <constraint firstAttribute="width" constant="300" id="Ltz-XX-WKU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Verify"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CcN-vy-1fZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GeM-8B-0gc" firstAttribute="centerY" secondItem="RSW-kX-gl6" secondAttribute="centerY" constant="-50" id="Bc7-wp-Il3"/>
+                            <constraint firstItem="GeM-8B-0gc" firstAttribute="centerX" secondItem="RSW-kX-gl6" secondAttribute="centerX" id="Cz6-Ea-LTh"/>
+                            <constraint firstItem="i1X-3W-oDO" firstAttribute="centerY" secondItem="RSW-kX-gl6" secondAttribute="centerY" constant="25" id="DUr-jo-ydH"/>
+                            <constraint firstItem="i1X-3W-oDO" firstAttribute="centerX" secondItem="RSW-kX-gl6" secondAttribute="centerX" id="LaE-1F-E9U"/>
+                            <constraint firstItem="o2j-bH-OEK" firstAttribute="centerX" secondItem="RSW-kX-gl6" secondAttribute="centerX" id="PTp-nq-bJ5"/>
+                            <constraint firstItem="o2j-bH-OEK" firstAttribute="centerY" secondItem="RSW-kX-gl6" secondAttribute="centerY" constant="-256" id="zzX-tS-65B"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FBC-XS-CHG"/>
+                    <connections>
+                        <outlet property="otpTextField" destination="GeM-8B-0gc" id="Q8E-Ax-Wy7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQ3-8K-jvT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2644" y="4"/>
         </scene>
     </scenes>
     <resources>
