@@ -19,24 +19,21 @@ class OTPAuthenticationViewController: UIViewController {
     }
     
     @IBAction func verifyOTPButtonTapped(_ sender: UIButton) {
-        guard let enteredOTP = otpTextField.text else { return }
-        
-        if enteredOTP == "1234567" {
-            print("Your OTP is verified")
+        guard let enteredOTP = otpTextField.text, !enteredOTP.isEmpty else {
+            let alert = UIAlertController(title: "Error", message: "Please enter a valid OTP", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+            return
+        }
+
+        if let otpNumber = Int(enteredOTP) {
+            let alert = UIAlertController(title: "Success", message: "Your OTP (\(otpNumber)) is verified", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
         } else {
-            print("Invalid OTP")
+            let alert = UIAlertController(title: "Error", message: "Invalid OTP, please enter only numbers", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
         }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
