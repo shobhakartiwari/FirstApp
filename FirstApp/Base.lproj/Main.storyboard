@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qdc-NS-wuT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qdc-NS-wuT">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -74,7 +74,7 @@
                                     <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to ConnectApp " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1c-hy-fOZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome to ConnectApp " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1c-hy-fOZ">
                                 <rect key="frame" x="93.666666666666686" y="123" width="206" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -89,9 +89,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xox-Yj-PxX" secondAttribute="trailing" constant="16" id="8jb-9Z-8mz"/>
                             <constraint firstItem="40Y-oS-DQm" firstAttribute="top" secondItem="sIb-C4-cda" secondAttribute="bottom" constant="34" id="AGy-t4-zbi"/>
                             <constraint firstItem="tK0-kv-uqV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Cia-Ts-nvl"/>
-
                             <constraint firstItem="vo9-m6-rXT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GiD-uQ-AaA"/>
-
                             <constraint firstItem="sIb-C4-cda" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ljb-bI-w35"/>
                             <constraint firstItem="vo9-m6-rXT" firstAttribute="top" secondItem="Xox-Yj-PxX" secondAttribute="bottom" constant="8" symbolic="YES" id="VQG-VO-tPd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sIb-C4-cda" secondAttribute="trailing" constant="16" id="cNE-bw-jeZ"/>
@@ -100,10 +98,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g1c-hy-fOZ" secondAttribute="trailing" constant="93.329999999999998" id="gXz-dj-dqy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tK0-kv-uqV" secondAttribute="trailing" constant="16" id="hBF-g6-QBS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="40Y-oS-DQm" secondAttribute="trailing" constant="16" id="hiU-l0-iYP"/>
-
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vo9-m6-rXT" secondAttribute="trailing" constant="16" id="r4Y-lJ-Z3O"/>
                             <constraint firstItem="Xox-Yj-PxX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xt0-J9-nzy"/>
-
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LbT-ZC-9Md"/>
@@ -237,6 +233,36 @@
             </objects>
             <point key="canvasLocation" x="1903" y="4"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="og8-FZ-uVD">
+            <objects>
+                <viewController id="tPL-LO-fim" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zRP-5C-lHc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to connectApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faH-fD-e7T">
+                                <rect key="frame" x="58" y="359.66666666666669" width="276" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IUb-Yj-qih"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="faH-fD-e7T" firstAttribute="centerY" secondItem="zRP-5C-lHc" secondAttribute="centerY" id="1qz-Rg-I7A"/>
+                            <constraint firstItem="faH-fD-e7T" firstAttribute="centerX" secondItem="zRP-5C-lHc" secondAttribute="centerX" id="UT6-e9-QRl"/>
+                            <constraint firstItem="IUb-Yj-qih" firstAttribute="trailing" secondItem="faH-fD-e7T" secondAttribute="trailing" constant="59" id="gWw-ef-zaW"/>
+                            <constraint firstItem="faH-fD-e7T" firstAttribute="leading" secondItem="IUb-Yj-qih" secondAttribute="leading" constant="58" id="zXY-Ev-Hra"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Q8w-B9-gTx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4OY-tG-exn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3476" y="4"/>
+        </scene>
         <!--Authentication View Controller-->
         <scene sceneID="vV8-hd-Mjn">
             <objects>
@@ -265,13 +291,16 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1X-3W-oDO">
-                                <rect key="frame" x="46.666666666666657" y="374.66666666666669" width="300" height="50"/>
+                                <rect key="frame" x="46" y="374" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9F8-NV-GZG"/>
                                     <constraint firstAttribute="width" constant="300" id="Ltz-XX-WKU"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Verify"/>
+                                <connections>
+                                    <segue destination="tPL-LO-fim" kind="push" id="wu1-vM-Zey"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CcN-vy-1fZ"/>
